@@ -10,6 +10,7 @@
 }
 
 .header input[type=text] {
+    size: 336px;
     background-color: #CBA06F;
     border: none;
     padding-block: 16px;
