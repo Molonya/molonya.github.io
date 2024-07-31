@@ -10,10 +10,20 @@
 }
 
 .header input[type=text] {
-    size: 336px;
+    width: 336px;
     background-color: #CBA06F;
     border: none;
     padding-block: 16px;
     padding-inline: 16px;
     font-size: 16px;
+}
+
+.header img {
+    height: 56px;
+    width: auto;
+}
+
+.header .searchbar img {
+    width: 48px;
+    height: auto;
 }
