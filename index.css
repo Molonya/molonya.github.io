@@ -23,7 +23,9 @@
     width: auto;
 }
 
-.header .searchbar img {
-    width: 48px;
+
+.header .searchbar button img {
+    width: 24px;
     height: auto;
+    margin: 12px;
 }
