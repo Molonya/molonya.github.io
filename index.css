@@ -9,7 +9,7 @@
     cursor: pointer;
 }
 
-input {
+.searchbar input {
     background-color: #CBA06F;
     border: none;
     font-size: 16px;
