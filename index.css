@@ -41,6 +41,9 @@ body {
     margin-left: 20px;
 }
 
+.button-wrap {
+    align-items: center;
+}
 
 .icon-search {
     mask-image: url(/Search.png);
