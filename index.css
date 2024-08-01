@@ -43,6 +43,10 @@ body {
 
 .button-wrap {
     align-items: center;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 .icon-search {
