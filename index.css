@@ -1,12 +1,17 @@
+body {
+    margin: 0px;
+}
 .header {
     height: 80px;
+    display: inline-block;
+    background-color: #D9B080;
 }
 .header .searchbar button {
     float: right;
     padding: 12px 12px;
     margin-top: 8px;
     margin-right: 12px;
-    background: #CBA06F;
+    background-color: #CBA06F;
     font-size: 16px;
     border: none;
     cursor: pointer;
