@@ -10,7 +10,8 @@ body {
 }
 
 .searchbar {
-    width: auto;
+    display: flex;
+    flex-direction: row;
 }
 
 .header .searchbar button {
@@ -36,6 +37,7 @@ body {
 .header img {
     height: 56px;
     width: auto;
+    margin-bottom: 14px;
 }
 
 
