@@ -12,10 +12,10 @@ body {
 .searchbar {
     display: flex;
     flex-direction: row;
+
 }
 
 .header .searchbar button {
-    float: right;
     padding: 12px 12px;
     background-color: #CBA06F;
     font-size: 16px;
@@ -38,10 +38,10 @@ body {
     height: 56px;
     width: auto;
     margin-bottom: 14px;
+    margin-left: 20px;
 }
 
 
-.header .searchbar img {
-    width: 24px;
-    height: auto;
+.icon-search {
+    mask-image: url(/Search.png);
 }
