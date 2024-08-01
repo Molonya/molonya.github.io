@@ -15,15 +15,6 @@ body {
 
 }
 
-.header .searchbar button {
-    padding: 12px 12px;
-    background-color: #CBA06F;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    padding-block: 0px;
-}
-
 .header input[type=text] {
     width: 336px;
     background-color: #CBA06F;
@@ -43,6 +34,9 @@ body {
 
 .button {
     display: flex;
+    background-color: #CBA06F;
+    border: none;
+    cursor: pointer;
 }
 
 .button,
