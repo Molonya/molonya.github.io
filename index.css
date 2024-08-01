@@ -41,14 +41,13 @@ body {
     margin-left: 20px;
 }
 
-.button-wrap {
-    align-items: center;
-    background-color: white;
+.button {
     display: flex;
-    justify-content: center;
-    position: relative;
 }
 
-.icon-search {
-    mask-image: url(/Search.png);
+.button,
+img {
+    width: 24px;
+    height: 24px;
+    padding: 12px;
 }
