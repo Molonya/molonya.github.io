@@ -3,8 +3,10 @@ body {
 }
 .header {
     height: 80px;
-    display: inline-block;
+    align-items: center;
+    display: flex;
     background-color: #D9B080;
+    flex-direction: row;
 }
 
 .searchbar {
@@ -29,10 +31,6 @@ body {
     padding-block: 16px;
     padding-inline: 16px;
     font-size: 16px;
-}
-
-.header input::placeholder {
-    color: #503C27;
 }
 
 .header img {
