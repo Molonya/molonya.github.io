@@ -1,3 +1,6 @@
+.header {
+    height: 80px;
+}
 .header .searchbar button {
     float: right;
     padding: 12px 12px;
@@ -12,11 +15,15 @@
 .header input[type=text] {
     width: 336px;
     background-color: #CBA06F;
-    color: #503C27;
+    color: #413924;
     border: none;
     padding-block: 16px;
     padding-inline: 16px;
     font-size: 16px;
+}
+
+.header input::placeholder {
+    color: #503C27;
 }
 
 .header img {
