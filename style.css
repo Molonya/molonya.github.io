@@ -1,0 +1,27 @@
+body {
+    margin: 0px;
+}
+.header {
+    height: 80px;
+    align-items: center;
+    display: flex;
+    background-color: #D9B080;
+    flex-direction: row;
+}
+
+.header input[type=text] {
+    width: 336px;
+    background-color: #CBA06F;
+    color: #413924;
+    border: none;
+    padding-block: 16px;
+    padding-inline: 16px;
+    font-size: 16px;
+}
+
+.header img {
+    height: 56px;
+    width: auto;
+    margin-bottom: 14px;
+    margin-left: 20px;
+}
