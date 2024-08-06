@@ -7,21 +7,67 @@ body {
     display: flex;
     background-color: #D9B080;
     flex-direction: row;
+    justify-content: space-between;
 }
 
-.header input[type=text] {
+.searchbar input[type=text] {
     width: 336px;
-    background-color: #CBA06F;
-    color: #413924;
     border: none;
+    border-radius: 4px;
     padding-block: 16px;
     padding-inline: 16px;
     font-size: 16px;
+    
 }
 
-.header img {
+input:focus {
+    background-color: white;
+}
+
+.header >img {
     height: 56px;
     width: auto;
     margin-bottom: 14px;
-    margin-left: 20px;
+    margin-left: 24px;
+}
+
+.nav {
+    width: 584px;
+    display: inline-flex;
+    align-items: center;
+}
+.create_post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #edc28f;
+    padding: 0;
+    margin-left: 48px;
+}
+
+.profile {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #105b5b;
+    padding: 0;
+    margin-right: 24px;
+    border: 1px solid;
+    border-color: #614a32;
+    color: white;
+}
+
+.create_post img {
+    height: 16px;
+    width: auto;
+    padding-left: 8px;
 }
