@@ -11,16 +11,29 @@
       <img src="/Logo.png" alt="Кулик">
         <div class="nav">
           <div class="searchbar">
-            <input type="text" placeholder="Авторы, произведения, метки">
+            <input type="text" placeholder="Авторы, произведения, метки"
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='Авторы, произведения, метки'">
+            <button>
+            <img src="/Search.png" alt="Искать"> 
+            </button>
           </div>
           <button class="create_post">
             Написать
             <img src="/pencil.png" alt="Написать">
           </button>
         </div>
-        <button class="profile">
-          ВК
-        </button>
+        <div class="switcher-prf">
+          <ul>
+            <li>
+              <input type="checkbox" name="light" id="light">
+            </li>
+          </ul>
+          <img src="/light.png" alt="Светлая тема">
+          <button class="profile">
+            ВК
+          </button>
+        </div>
     </div>
 </body>
 </html>
