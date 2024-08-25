@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <title>Кулик</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
@@ -31,9 +35,33 @@
           </ul>
           <img src="/light.png" alt="Светлая тема">
           <button class="profile">
-            ВК
+           ВК
           </button>
         </div>
+    </div>
+    <div class="feed">
+      <div class="feed-header">
+        <div class="post-sort">
+          <button class="popular">
+           Популярное
+          </button>
+          <button class="new">
+            Свежее
+          </button>
+          <button class="filter">
+            <img src="filter.png" alt="Фильтр ленты">
+          </button>
+        </div>
+        <div class="date-selector">
+          <span>за</span>
+          <select class="sort-date">
+           <option value="today" selected>сегодня</option>
+           <option value="month">этот месяц</option>
+            <option value="year">этот год</option>
+           <option value="all">все время</option>
+          </select>
+        </div>
+      </div>
     </div>
 </body>
 </html>

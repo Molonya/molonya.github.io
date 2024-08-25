@@ -1,9 +1,16 @@
 body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
     margin: 0px;
     height: 2000px;
     background-color: #979797;
+    font-family: "Inter", sans-serif;
 }
+
 .header {
+    width: 100%;
     height: 80px;
     align-items: center;
     display: flex;
@@ -23,6 +30,9 @@ body {
 }
 
 .searchbar button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: inherit;
     width: 48px;
     position:absolute;
@@ -85,8 +95,9 @@ input::placeholder {
     width: 200px;
     border: none;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 20px;
     background-color: #edc28f;
+    color: #503C27;
     padding: 0;
     margin-left: 48px;
     cursor: pointer;
@@ -138,4 +149,92 @@ input[type="checkbox"]:checked::before { left: 24%; transition: 0.4s; }
     height: 16px;
     width: auto;
     padding-left: 8px;
+}
+
+.feed {
+    display: flex;
+    width: 900px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFEFB;
+    border: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    overflow: hidden;
+}
+
+.feed-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 64px;
+    background-color: #E5EFF1;
+    overflow: hidden;
+    border-bottom: 2px solid rgba(26, 72, 82, 0.1);
+}
+
+.post-sort {
+    display: flex;
+    flex-direction: row;
+    margin-left: 32px;
+}
+.post-sort .new, .popular {
+    height: 32px;
+    width: auto;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: #FCFDFF;
+    padding-inline: 24px;
+    cursor: pointer;
+    color: #04141A;
+    &:not(.popular) {
+        margin-left: 4px;
+    }
+}
+
+.feed-header .filter {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    width: auto;
+    border: none;
+    border-radius: 4px;
+    background-color: #FCFDFF;
+    cursor: pointer;
+    margin-left: 16px;
+}
+
+.filter img {
+    height: 16px;
+    width: auto;
+}
+
+.sort-date {
+    width: 100%;
+    min-width: 7ch;
+    max-width: 13.5ch;
+    font-size: 18px;
+    font-family: inherit;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    color: #04141A;
+}
+
+.date-selector {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-right: 32px;
+}
+
+.date-selector span {
+    font-size: 18px;
+    color: #04141A;
+    cursor: pointer;
 }
