@@ -216,7 +216,6 @@ input[type="checkbox"]:checked::before { left: 24%; transition: 0.4s; }
 .sort-date {
     width: 100%;
     min-width: 7ch;
-    max-width: 13.5ch;
     font-size: 18px;
     font-family: inherit;
     border: none;
@@ -224,6 +223,7 @@ input[type="checkbox"]:checked::before { left: 24%; transition: 0.4s; }
     outline: none;
     cursor: pointer;
     color: #04141A;
+    padding-right: 0.5ch;
 }
 
 .date-selector {
@@ -236,5 +236,97 @@ input[type="checkbox"]:checked::before { left: 24%; transition: 0.4s; }
 .date-selector span {
     font-size: 18px;
     color: #04141A;
+}
+
+.post-box {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 100% 60px;
+
+}
+
+.tag-column {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: transparent;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: transparent;
+}
+
+.content .post {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin-left: 16.6%;
+    color: #413924;
+    font-family: serif;
+    font-size: 22px;
+}
+
+.post h1 {
+    margin: 0;
+    font-size: 36px;
+    margin-top: 16px;
+    font-family: sans-serif;
+}
+
+.post .autor {
+    align-self: end;
+    font-size: 20px;
+}
+
+.post-date {
+    display: inline-flex;
+    align-self: end;
+    margin-right: 32px;
+    margin-top: 16px;
+    color: rgba(80, 60, 39, 0.4);
+    font-size: 18px;
+}
+.nav-row {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: transparent;
+    opacity: 60%;
+}
+
+.nav-row .int-buttons {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 160px;
+    margin-left: 32px;
+}
+
+.nav-row button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
     cursor: pointer;
+}
+.nav-row .post-likes {
+    margin-right: 32px;
+}
+
+.nav-row button * {
+    height: 32px;
 }
