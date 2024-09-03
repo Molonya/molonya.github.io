@@ -321,7 +321,7 @@ a {
 }
 
 a:hover {
-    color: red;
+    color: green;
     transition: 0s;
 }
 
