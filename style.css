@@ -60,7 +60,7 @@ input::placeholder {
     background-color: inherit;
     align-items: center;
     font-size: 16px;
-    padding-left: 1em;
+    padding-left: 1rem;
     border-radius: inherit;
 }
 
@@ -68,7 +68,7 @@ input::placeholder {
     background-color: white;
     border: none;
     outline: none;
-    padding-left: 1em;
+    padding-left: 1rem;
 }
 
 .searchbar >input:focus {
@@ -105,26 +105,26 @@ input::placeholder {
 }
 ul {
     padding: 0;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
     background-image: url(light.png);
     background-repeat: no-repeat;
     background-size: 0.85rem;
-    background-position: center right 15%;
+    background-position: center right;
 }
 li {
-    width: 4rem; 
+    width: 3.75rem; 
     display: flex; 
     align-items: center; 
     position: relative; 
 }
 
-input[type="checkbox"] { appearance: none; width: 44px; height: 24px; border-radius: 12px; border: 1px solid rgba(80, 60, 39, 0.6); background: #cba06f; cursor: pointer;}
+input[type="checkbox"] { appearance: none; width: 2.33rem; height: 1.33rem; border-radius: 1rem; border: 1px solid rgba(80, 60, 39, 0.6); background: #cba06f; cursor: pointer;}
 
-input[type="checkbox"]::before { width: 16px; height: 16px; border-radius: 50%; border: 1px solid rgba(80, 60, 39, 0.6); background-color: #edc28f; content: ""; position: absolute; top: 6px; left: 34%; transition: 0.4s; }
+input[type="checkbox"]::before { width: 1rem; height: 1rem; border-radius: 50%; border: 1px solid rgba(80, 60, 39, 0.6); background-color: #edc28f; content: ""; position: absolute; top: 0.3rem; left: 35%; transition: 0.4s; }
 
 input[type="checkbox"]:checked { background-color: black; transition: 0.4s; }
 
-input[type="checkbox"]:checked::before { left: 10%; transition: 0.4s; }
+input[type="checkbox"]:checked::before { left: 11%; transition: 0.4s; }
 
 .switcher-prf {
     display: flex;
@@ -268,13 +268,13 @@ input[type="checkbox"]:checked::before { left: 10%; transition: 0.4s; }
 
 .tag {
     border: none;
-    border-radius: 0.75em;
+    border-radius: 0.75rem;
     background-color: rgba(98, 81, 21, 0.15);
     color: #503C27;
     opacity: 55%;
     font-size: 16px;
     font-family: serif;
-    padding: 0.25em 0.66em;
+    padding: 0.25rem 0.66rem;
     cursor: pointer;
 }
 
