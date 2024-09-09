@@ -321,7 +321,7 @@ a {
 }
 
 a:hover {
-    color: green;
+    color: red;
     transition: 0s;
 }
 
@@ -333,7 +333,7 @@ a:hover {
 }
 
 .author:hover {
-    box-shadow: inset 0 -1px green;
+    box-shadow: inset 0 -1px red;
     transition: 0s;
 }
 
