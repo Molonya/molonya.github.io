@@ -2,50 +2,41 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: center;
     margin: 0px;
-    height: 2000px;
     background-color: #979797;
     font-family: "Inter", sans-serif;
 }
 
 .header {
-    width: 100%;
-    height: 4rem;
     align-items: center;
-    display: flex;
+    display: inline-flex;
     background-color: #D9B080;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 1.5rem;
 }
 
 .searchbar {
-    width: 336px;
-    height: 48px;
+    font-size: 16px;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25em;
     display: inline-block;
-    position: relative;
     background-color: #cba06f;
+    position: relative;
 }
 
 .searchbar button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: inherit;
-    width: 48px;
     position:absolute;
-    top: 0px;
     right: 0px;
     border: none;
     background-color: transparent;
     cursor: pointer;
-    padding: 0;
+    padding: 1em;
+    font-size: inherit;
     background-image: url(Search.png);
-    background-size: 1.25rem;
+    background-size: 55%;
     background-repeat: no-repeat;
-    background-position: center right 1ch;
+    background-position: center right 0.5em;
 }
 
 input::placeholder {
@@ -54,54 +45,47 @@ input::placeholder {
 }
 
 .searchbar >input {
-    width: 320px;
+    width: 15em;
     height: inherit;
+    position: relative;
     border: none;
     background-color: inherit;
-    align-items: center;
-    font-size: 16px;
-    padding-left: 1rem;
+    font-size: inherit;
     border-radius: inherit;
+    padding: 0.5em 1em;
 }
 
 .searchbar >input[type=text]:focus {
     background-color: white;
     border: none;
     outline: none;
-    padding-left: 1rem;
 }
 
 .searchbar >input:focus {
-    padding: 1px;
     box-shadow: inset 0 0 0 1px #614a32;
 }
 .header >img {
     height: 52px;
     width: auto;
-    margin-bottom: 0.25rem;
-    margin-left: 1.5rem;
 }
 
 .nav {
-    width: 584px;
     display: inline-flex;
     align-items: center;
 }
 .create_post {
-    height: 50px;
-    width: 200px;
     border: none;
-    border-radius: 4px;
-    font-size: 20px;
+    border-radius: 0.25em;
+    font-size: 16px;
     background-color: #edc28f;
     color: #503C27;
-    padding-right: 2rem;
+    padding: 0.5em 3em 0.5em 2em;
     margin-left: 2.5rem;
     cursor: pointer;
     background-image: url(pencil.png);
     background-repeat: no-repeat;
-    background-size: 0.8rem;
-    background-position: center right 25%;
+    background-size: 0.75em;
+    background-position: center right 1.75em;
 }
 ul {
     padding: 0;
@@ -130,7 +114,6 @@ input[type="checkbox"]:checked::before { left: 11%; transition: 0.4s; }
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 1.66rem;
 }
 
 .profile {
@@ -150,10 +133,9 @@ input[type="checkbox"]:checked::before { left: 11%; transition: 0.4s; }
 
 .feed {
     display: flex;
-    width: 900px;
-    height: 100%;
+    width: 70%;
+    align-self: center;
     flex-direction: column;
-    align-items: center;
     background-color: #FFFEFB;
     border: none;
     border-radius: 4px;
@@ -166,8 +148,8 @@ input[type="checkbox"]:checked::before { left: 11%; transition: 0.4s; }
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
     height: 3rem;
+    padding: 0 2rem;
     background-color: #E5EFF1;
     overflow: hidden;
     border-bottom: 2px solid rgba(26, 72, 82, 0.1);
@@ -176,7 +158,6 @@ input[type="checkbox"]:checked::before { left: 11%; transition: 0.4s; }
 .post-sort {
     display: flex;
     flex-direction: row;
-    margin-left: 1.5rem;
 }
 .post-sort .new, .popular {
     height: 1.66rem;
@@ -224,7 +205,6 @@ input[type="checkbox"]:checked::before { left: 11%; transition: 0.4s; }
     display: inline-flex;
     flex-direction: row;
     align-items: baseline;
-    margin-right: 1.5rem;
 }
 
 .date-selector span {
@@ -234,12 +214,13 @@ input[type="checkbox"]:checked::before { left: 11%; transition: 0.4s; }
 
 .post-box {
     display: grid;
-    width: 100%;
     height: auto;
     grid-template-columns: 16ch 4fr;
     grid-template-rows: 1fr auto;
     column-gap: 1rem;
     row-gap: 1rem;
+    border-bottom: solid 2px rgba(80, 60, 39, 0.1);
+    padding: 1.5rem 2rem;
 }
 
 .tag-column {
@@ -257,13 +238,6 @@ input[type="checkbox"]:checked::before { left: 11%; transition: 0.4s; }
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    margin-top: 1.5rem;
-    margin-left: 1.5rem;
-}
-
-.tag-cloud * {
-    margin-bottom: 0.25rem;
-    margin-right: 0.25rem;
 }
 
 .tag {
@@ -275,7 +249,15 @@ input[type="checkbox"]:checked::before { left: 11%; transition: 0.4s; }
     font-size: 16px;
     font-family: serif;
     padding: 0.25rem 0.66rem;
+    margin-right: 0.3rem;
+    margin-bottom: 0.3rem;
     cursor: pointer;
+}
+
+.tag__add {
+    background-image: url(add.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .tag:hover {
@@ -297,21 +279,20 @@ input[type="checkbox"]:checked::before { left: 11%; transition: 0.4s; }
     background-color: transparent;
 }
 
-.content .post {
+.post {
     display: inline-flex;
     flex-direction: column;
-    align-items: center;
-    width: fit-content;
     margin: auto;
     color: #413924;
     font-family: serif;
     font-size: 22px;
 }
 
-.post h1 {
+h1 {
     margin: 0;
     font-size: 36px;
     font-family: sans-serif;
+    text-align: center;
 }
 
 a {
@@ -340,8 +321,6 @@ a:hover {
 .post-date {
     display: inline-flex;
     align-self: end;
-    margin-right: 1.5rem;
-    margin-top: 1.5rem;
     color: rgba(80, 60, 39, 0.4);
     font-size: 18px;
 }
@@ -355,7 +334,6 @@ a:hover {
     grid-row-start: 2;
     grid-row-end: 3;
     background-color: transparent;
-    border-bottom: solid 2px rgba(80, 60, 39, 0.3);
 }
 
 .nav-row .int-buttons {
@@ -363,7 +341,6 @@ a:hover {
     flex-direction: row;
     justify-content: space-between;
     width: 7.5rem;
-    margin-left: 1.5rem;
 }
 
 .nav-row button {
@@ -373,8 +350,6 @@ a:hover {
     background-color: transparent;
     padding: 0;
     cursor: pointer;
-    margin-top: 1rem;
-    margin-bottom: 0.75rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -399,6 +374,62 @@ a:hover {
 }
 
 .nav-row .post-likes {
-    margin-right: 1.5rem;
     background-image: url(like.png);
+}
+
+.cr-post-box {
+    display: inline-flex;
+    flex-direction: column;
+    border-bottom: solid 2px rgba(80, 60, 39, 0.1);
+    padding: 3rem 2rem 0;
+}
+
+.part-one {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.part-two {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.part-two .post {
+    opacity: 30%;
+    width: 60%;
+    margin: 0;
+}
+
+.sketch-button {
+    font-size: 20px;
+    color:#105b5b;
+    height: fit-content;
+    background-image: url(archive.svg);
+    background-position: top 0.1ch right;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    padding-right: 2.5ch;
+    cursor: pointer;
+}
+
+.add-tags {
+    padding: 0;
+    padding-right: 1rem;
+    max-width: 20ch;
+}
+
+.note {
+    width: 30ch
+}
+
+.add-tags__note {
+    margin-bottom: 0.66rem;
+}
+.note__text {
+    font-size: 16px;
+    line-height: 18px;
+    color: #413924;
+    opacity: 50%;
 }
