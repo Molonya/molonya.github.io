@@ -100,10 +100,10 @@ a:hover {
 }
 
 .menu__item.help::after {
-    font-size: 16px;
+    font-size: 12px;
     content: '❤';
     color: red;
-    padding-left: 8px;
+    padding-left: 4px;
 }
 
 .menu__item.is__active a {
