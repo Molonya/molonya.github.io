@@ -37,8 +37,8 @@ input, textarea, select, button {
     font-display: swap;
 }
   
- {
-    background-color: #FBF8D2;;
+body {
+    background-color: #FBF8D2;
     color: #00625E;
     display: flex;
     flex-direction: column;
