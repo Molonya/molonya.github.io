@@ -145,6 +145,7 @@ a:hover {
     padding: 32px 60px 60px 68px;
     min-height: 946px;
     background: linear-gradient(to bottom right, #FBF8D2 0%, #FBF8D2 50%, #E5EEDB 50%, #E5EEDB 100%) no-repeat bottom / 100% 63%;
+    overflow-x: hidden;
 }
 
 .product__item {
