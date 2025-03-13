@@ -335,6 +335,7 @@ a:hover {
 
     body {
         font-size: 18px;
+        display: block;
     }
 
     .article__first-floor {
